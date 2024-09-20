@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/api/api.dart';
+
 import '../model/movie_model.dart';
 
 class Home extends StatefulWidget {
@@ -59,6 +60,7 @@ class _HomeState extends State<Home> {
                   }
                   final movies = snapshot.data as List<Movie>;
 
+                  //Arthur pau mandado da mulher
                   return CarouselSlider.builder(
                     itemCount: movies.length,
                     itemBuilder: (context, index, movieIndex) {
@@ -97,6 +99,7 @@ class _HomeState extends State<Home> {
                       );
                     }
 
+                    //Dogão manja rola
                     final movies = snapshot.data as List<Movie>;
                     return ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -104,6 +107,7 @@ class _HomeState extends State<Home> {
                       itemBuilder: (context, index) {
                         final movie = movies[index];
 
+                      //Mell amança boi
                         return Container(
                           width: 150,
                           margin: const EdgeInsets.symmetric(horizontal: 10),
