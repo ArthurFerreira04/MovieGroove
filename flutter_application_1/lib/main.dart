@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screen/home.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +27,6 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
   
-  get GoogleFonts => null; //TESTANDO PRA VER SE O ERRO SOME!
 
   @override
   Widget build(BuildContext context) {
@@ -54,10 +57,13 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 50), // Espaço entre logo e botões
-                // Mell pegadora de agroboy 
+
                 ElevatedButton(
                   onPressed: () {
-                    // Ação do botão de login
+                    Navigator.push(
+                    context,
+                      MaterialPageRoute(builder: (context) => const Home()),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF00FF00), // Cor de fundo #00FF00
@@ -71,7 +77,7 @@ class HomePage extends StatelessWidget {
                     style: GoogleFonts.roboto(
                       textStyle: const TextStyle(
                         fontSize: 18,
-                        color: Colors.black, // enzo gosta de mãe solteira
+                        color: Colors.black, 
                       ),
                     ),
                   ),

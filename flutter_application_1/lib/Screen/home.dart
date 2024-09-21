@@ -60,7 +60,6 @@ class _HomeState extends State<Home> {
                   }
                   final movies = snapshot.data as List<Movie>;
 
-                  //Arthur pau mandado da mulher
                   return CarouselSlider.builder(
                     itemCount: movies.length,
                     itemBuilder: (context, index, movieIndex) {
@@ -99,7 +98,6 @@ class _HomeState extends State<Home> {
                       );
                     }
 
-                    //Dogão manja rola
                     final movies = snapshot.data as List<Movie>;
                     return ListView.builder(
                       scrollDirection: Axis.horizontal,
@@ -107,7 +105,6 @@ class _HomeState extends State<Home> {
                       itemBuilder: (context, index) {
                         final movie = movies[index];
 
-                      //Mell amança boi
                         return Container(
                           width: 150,
                           margin: const EdgeInsets.symmetric(horizontal: 10),
@@ -129,7 +126,7 @@ class _HomeState extends State<Home> {
                   },
                 ),
               ),
-                //BrunÃ£o pegador de coroa
+
               const Text(
                 'Top Rated',
                 style: TextStyle(color: Colors.white),
