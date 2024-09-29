@@ -21,7 +21,11 @@ dependencies:
   http: ^1.2.2
   carousel_slider: ^5.0.0
   google_fonts: ^6.2.1
+  dartz: ^0.10.1
+  cached_network_image: ^3.2.3
 
 flutter:
   assets:
     - assets/logo.png
+    - assets/backgroundApp.png
+    - assets/backgroundHome.png
